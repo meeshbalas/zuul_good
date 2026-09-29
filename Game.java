@@ -16,7 +16,7 @@ public class Game
     {
         Room outside, theater, pub, lab, office, library, cellar;
 
-
+        // rooms
         outside = new Room("outside the main entrance of the university");
         theater = new Room("in a lecture theater");
         pub = new Room("in the campus pub");
@@ -206,5 +206,11 @@ public class Game
         {
             return true;
         }
+    }
+
+    public static void main(String[] args)
+    {
+        Game game = new Game();
+        game.play();
     }
 }
